@@ -2,6 +2,11 @@ body{
 	font-family: 'Noto Sans', sans-serif;
 	background-color: #e6e6e6;
 }
+h2{
+	text-align: center;
+	font-size: 30px;
+	color: #cc00cc;
+}
 #trivia{
 	text-align: center;
 }
@@ -17,8 +22,9 @@ p{
 	font-size: 25px;
 	color:blue;
 }
-#afterCheck{
+#afterCheck {
 	visibility: hidden;
 	font-size: 100px;
 	text-align: center;
+	color: #cc00cc;
 }
