@@ -4,45 +4,86 @@
 	<meta charset="UTF-8">
 	<title>Trivia Game</title>
 	<link href="assets/css/style.css" rel="stylesheet">
-	<script src="assets/javascript/app.js"></script>
-	<link https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
-	<script https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	
+	<script src="assets/javascript/app.js"></script> 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
+<div class="container">
 	<h1>Trivia Time!</h1>
 
 	<form id = "trivia" name = "trivia">
 
-<p>Who was the legendary Benedictine monk who invented champagne?</p>
-		<input type = "radio" id = "qu" name ="question1" value = "Dom Perignon">Dom Perignon<br>
-		<input type = "radio" id = "qu" name ="question1" value = "Jaques Champaine">Jaques Champaine<br>
-		<input type = "radio" id = "qu" name ="question1" value = "Perrier Blanchard">Perrier Blanchard<br>
-		<input type = "radio" id = "qu" name ="question1" value = "Monti Christo">Monti Christo<br>
+	<p>Who was the legendary Benedictine monk who invented champagne?</p>
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question1" value = "Dom Perignon">Dom Perignon
+	</label>
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question1" value = "Jaques Champaine">Jaques Champaine
+	</label>
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question1" value = "Perrier Blanchard">Perrier Blanchard
+	</label>
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question1" value = "Monti Christo">Monti Christo
+	</label>
 
-<p>Name the largest freshwater lake in the world</p>
-		<input type = "radio" id = "qu" name ="question2" value = "Lake Superior">Lake Superior<br>
-		<input type = "radio" id = "qu" name ="question2" value = "Lake Ontario">Lake Ontario<br>
-		<input type = "radio" id = "qu" name ="question2" value = "Lake Victoria">Lake Victoria<br>
-		<input type = "radio" id = "qu" name ="question2" value = "Lake Michigan">Lake Michigan<br>
+
+	<p>Name the largest freshwater lake in the world</p>
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question2" value = "Lake Superior">Lake Superior
+	</label>
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question2" value = "Lake Ontario">Lake Ontario
+	</label>
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question2" value = "Lake Victoria">Lake Victoria
+	</label>
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question2" value = "Lake Michigan">Lake Michigan
+	</label>
 
 <p>Where would you find the Sea of Tranquility</p>
-		<input type = "radio" id = "qu" name ="question3" value = "The Moon">The Moon<br>
-		<input type = "radio" id = "qu" name ="question3" value = "Saturn">Saturn<br>
-		<input type = "radio" id = "qu" name ="question3" value = "Turkey">Turkey<br>
-		<input type = "radio" id = "qu" name ="question3" value = "Mars">Mars<br>
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question3" value = "The Moon">The Moon
+	</label>
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question3" value = "Saturn">Saturn
+	</label>
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question3" value = "Turkey">Turkey
+	</label>
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question3" value = "Mars">Mars
+	</label>
 
 <p>What is someone who shoes horses called</p>
-		<input type = "radio" id = "qu" name ="question4" value = "A farrier">A farrier<br>
-		<input type = "radio" id = "qu" name ="question4" value = "A blacksmith">A blacksmith<br>
-		<input type = "radio" id = "qu" name ="question4" value = "A cobbler">A cobbler<br>
-		<input type = "radio" id = "qu" name ="question4" value = "A shoer">A shoer<br>
-
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question4" value = "A farrier">A farrier
+	</label>
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question4" value = "A blacksmith">A blacksmith
+	</label>
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question4" value = "A cobbler">A cobbler
+	</label>
+	<label class="radio-inline">
+		<input type = "radio" id = "qu" name ="question4" value = "A shoer">A shoer
+	</label><br>
+<br>
+<br>
 <input id="button" type="button" value="check my answers!" onclick="check();">
 </form>
 
 <div id="afterCheck">
 	<p id="numberCorrect"></p>
 	<p id="numberIncorrect"></p>
+</div>
 </div>
 </body>
 
